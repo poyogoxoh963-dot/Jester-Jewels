@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Support page for Jester Jewels by Cyber builder." />
+  <title>Support — Jester Jewels</title>
+  <style>
+    :root {
+      --bg: #16111f;
+      --bg2: #1d1530;
+      --card: rgba(255,255,255,0.08);
+      --line: rgba(255,255,255,0.12);
+      --text: #faf7ff;
+      --muted: #c3bdd2;
+      --accent: #ff8ede;
+      --accent2: #84c2ff;
+      --accent3: #ffc977;
+      --radius: 24px;
+      --shadow: 0 18px 48px rgba(0,0,0,.30);
+      --max: 1050px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: Inter, system-ui, sans-serif;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 14% 18%, rgba(255,142,222,.18), transparent 28%),
+        radial-gradient(circle at 85% 24%, rgba(132,194,255,.16), transparent 28%),
+        linear-gradient(140deg, var(--bg), var(--bg2));
+    }
+    .wrap { width: min(calc(100% - 22px), var(--max)); margin: 0 auto; }
+    .topbar {
+      margin-top: 12px; position: sticky; top: 10px; z-index: 10;
+      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center;
+      padding: 12px 14px; border-radius: 999px;
+      background: rgba(22,17,31,.68); backdrop-filter: blur(12px); border: 1px solid var(--line); box-shadow: var(--shadow);
+    }
+    .logo { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+    .orb {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: conic-gradient(from 0deg, var(--accent), var(--accent2), var(--accent3), var(--accent));
+      box-shadow: 0 0 24px rgba(255,142,222,.24);
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; }
+    nav a {
+      text-decoration: none; color: var(--text); padding: 10px 14px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.11); background: rgba(255,255,255,.04);
+    }
+    .hero {
+      display: grid; grid-template-columns: 1.05fr .95fr; gap: 18px; padding: 28px 0 18px;
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); backdrop-filter: blur(12px); box-shadow: var(--shadow);
+      padding: 24px;
+    }
+    h1 { font-size: clamp(2rem, 6vw, 4.2rem); line-height: .98; margin: 0 0 12px; letter-spacing: -.04em; }
+    h2 { margin: 0 0 10px; font-size: 1.1rem; }
+    p, li { color: var(--muted); line-height: 1.75; }
+    .contact-tile {
+      padding: 16px; border-radius: 18px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.09);
+      margin-top: 16px;
+    }
+    .contact-mail {
+      display: inline-block; margin-top: 8px; text-decoration: none; color: var(--text);
+      padding: 12px 14px; border-radius: 14px; background: linear-gradient(135deg, rgba(255,142,222,.16), rgba(132,194,255,.14));
+      border: 1px solid rgba(255,255,255,.10);
+      word-break: break-word;
+    }
+    .list { display: grid; gap: 12px; padding: 0; margin: 0; list-style: none; }
+    .list li {
+      padding: 14px; border-radius: 16px; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.04);
+    }
+    .pulse-box {
+      min-height: 100%; display: grid; place-items: center; overflow: hidden; position: relative;
+    }
+    .rings { position: relative; width: 220px; height: 220px; }
+    .rings span {
+      position: absolute; inset: 0; border-radius: 50%; border: 1px solid rgba(255,255,255,.14); animation: pulse 3.2s ease-in-out infinite;
+    }
+    .rings span:nth-child(2) { inset: 24px; animation-delay: .4s; }
+    .rings span:nth-child(3) { inset: 48px; animation-delay: .8s; }
+    .rings strong {
+      position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 38px; font-size: 1.05rem;
+    }
+    @keyframes pulse {
+      0%,100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: .75; }
+    }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; margin-bottom: 34px; }
+    a { color: var(--text); }
+    footer { text-align: center; color: var(--muted); padding: 0 0 28px; }
+    @media (max-width: 860px) {
+      .hero, .grid-2 { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .card { padding: 18px; border-radius: 20px; }
+      .rings { width: 180px; height: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="logo"><span class="orb" aria-hidden="true"></span> Jester Jewels Support</div>
+      <nav>
+        <a href="index.html">Overview</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="marketing.html">Marketing</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <article class="card">
+          <h1>Support and Contact Information</h1>
+          <p>
+            This page is the public support location for <strong>Jester Jewels</strong> by <strong>Cyber builder</strong>.
+            Users, reviewers, and moderators can use this page to contact the developer and understand how support is handled.
+          </p>
+
+          <div class="contact-tile">
+            <h2>Developer Contact</h2>
+            <p>
+              For support questions, technical issues, or general feedback, please contact the developer by email.
+            </p>
+            <a class="contact-mail" href="mailto:poyogoxoh963@gmail.com">poyogoxoh963@gmail.com</a>
+          </div>
+        </article>
+
+        <aside class="card pulse-box" aria-label="Support visual">
+          <div class="rings" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>Responsive support<br />clear contact<br />public visibility</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid-2">
+        <article class="card">
+          <h2>How support works</h2>
+          <ul class="list">
+            <li>Questions about the application can be sent by email.</li>
+            <li>Bug reports and suggestions are welcome.</li>
+            <li>Feedback helps improve future versions of the app.</li>
+            <li>This public page is intended to make contact simple and transparent.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Support scope</h2>
+          <ul class="list">
+            <li>General app questions</li>
+            <li>Basic troubleshooting communication</li>
+            <li>Feedback about usability and experience</li>
+            <li>Requests related to public information shown for the app</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Cyber builder · Support page for Jester Jewels
+    </footer>
+  </div>
+</body>
+</html>
